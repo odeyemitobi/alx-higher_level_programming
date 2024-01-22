@@ -20,4 +20,4 @@ def safe_print_list(my_list=[], x=0):
         print()
 
     # Return the real number of elements printed
-    return elements_printed
+    return (elements_printed)
