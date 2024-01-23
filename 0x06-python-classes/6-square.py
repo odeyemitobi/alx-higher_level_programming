@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Square defining"""
+"""Square class defination"""
 
 
 class Square:
@@ -15,9 +15,6 @@ class Square:
         Parameters:
             size (int, optional): The size of the square. Defaults to 0.
             position (tuple, optional): The position of the square. Defaults to (0, 0).
-        Raises:
-            TypeError: If size is not an integer or position is not a tuple of 2 positive integers.
-            ValueError: If size is less than 0 or position values are not positive integers.
         """
         self.size = size
         self.position = position
