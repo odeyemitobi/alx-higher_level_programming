@@ -8,7 +8,7 @@ class Square:
     It represents a square and can be used as a template
     for creating square objects.
     """
-    
+
     def __init__(self, size=0, position=(0, 0)):
         """
         Initializes a new instance of the Square class.
