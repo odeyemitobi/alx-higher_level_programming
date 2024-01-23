@@ -5,9 +5,6 @@
 class Node:
     """
     This is the Node class for a singly linked list.
-    Attributes:
-        __data (int): Private instance attribute representing the data of the node.
-        __next_node (Node): Private instance attribute representing the next node in the list.
     """
 
     def __init__(self, data, next_node=None):
