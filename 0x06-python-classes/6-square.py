@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Square class defination"""
+"""Square class defining"""
 
 
 class Square:
@@ -8,13 +8,16 @@ class Square:
     It represents a square and can be used as a template
     for creating square objects.
     """
-
+    
     def __init__(self, size=0, position=(0, 0)):
         """
         Initializes a new instance of the Square class.
         Parameters:
             size (int, optional): The size of the square. Defaults to 0.
             position (tuple, optional): The position of the square. Defaults to (0, 0).
+        Raises:
+            TypeError: If size is not an integer or position is not a tuple of 2 positive integers.
+            ValueError: If size is less than 0 or position values are not positive integers.
         """
         self.size = size
         self.position = position
