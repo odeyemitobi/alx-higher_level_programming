@@ -45,10 +45,10 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-        """Calculate and return the rectangle perimeter"""
-        return (
-            2 * (self.__width + self.__height) if self.__width and self.__height else 0
-        )
+        """Calculates and return  the perimeter of a Rectangle"""
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        return 2 * (self.__width + self.__height)
 
     def __str__(self):
         """Return a string representation of the rectangle"""
@@ -56,4 +56,3 @@ class Rectangle:
             return ""
         else:
             return "\n".join(["#" * self.__width] * self.__height)
-
