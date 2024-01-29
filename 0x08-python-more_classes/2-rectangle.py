@@ -1,20 +1,18 @@
 #!/usr/bin/python3
-"""
-Defines a Rectangle class.
-"""
+"""Rectangle module"""
 
 
 class Rectangle:
-    """Rectangle class body"""
+    """Rectangle class with private width and height attributes"""
 
     def __init__(self, width=0, height=0):
-        """Initializes a Rectangle width and height."""
+        """Initialization method with optional width and height"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Retrieves the width of a Rectangle instance."""
+        """Gets method for width"""
         return self.__width
 
     @width.setter
@@ -47,7 +45,10 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-        """Calculate and return the rectangle perimeter"""
-        return (
-            2 * (self.__width + self.__height) if self.__width and self.__height else 0
-        )
+        """Calculates the perimeter of a Rectangle instance
+        Returns:
+            Perimeter of the rectangle, given by 2 * (height + width)
+        """
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        return 2 * (self.__width + self.__height)
