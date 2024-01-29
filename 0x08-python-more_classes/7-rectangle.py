@@ -5,8 +5,8 @@
 class Rectangle:
     """Rectangle class with private width and height attributes"""
 
-    number_of_instances = 0  # Public class attribute
-    print_symbol = "#"  # Public class attribute
+    number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """Initialization method with optional width and height"""
