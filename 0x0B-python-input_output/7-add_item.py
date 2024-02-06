@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# 9-add_item.py
+# Gedeon Obae Gekonge <gideonobae@gmail.com>
 """
 Script that adds all arguments to a Python list, and then saves them to a file
 """
@@ -12,7 +14,7 @@ filename = "add_item.json"
 
 try:
     json_list = load_from_json_file(filename)
-except FileNotFoundError:
+except:
     json_list = []
 
 for arg in argv[1:]:
